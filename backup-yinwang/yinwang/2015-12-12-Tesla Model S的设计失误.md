@@ -2,7 +2,7 @@
 
 ## Tesla Model S的设计失误
 
-![](http://www.yinwang.org/images/model-s-interior.jpg)
+![](img/model-s-interior.jpg)
 
 这幅美丽的图片，就是红极一时的Tesla电动车Model S的内景。然而你有没有发现，其中有一些不大对劲的地方？虽然我看好电动汽车，它们环保，安静，运动敏捷，然而我发现Tesla的这款Model S，其实有一些严重的设计失误。
 
@@ -12,11 +12,11 @@
 
 顶棚上有一个天窗，却没看见天窗的开关。通常说来，当人们看见门或者窗户，他们期望有一个开关，设在旁边顺手的地方。然而你在Model S里面一抬头，却看不见任何可以按下或者掰动的开关。顶棚上面几乎是光溜溜的一片：
 
-![](http://www.yinwang.org/images/model-s-sunroof.jpg)
+![](img/model-s-sunroof.jpg)
 
 有些人可能觉得这样的设计，比其它车子更加美观，简洁。然而你可能没想到，这种“美观”其实是有代价的。一个很简单的问题是：你怎么打开天窗？答案：你必须使用触摸屏！
 
-![](http://www.yinwang.org/images/model-s-screen.jpg)
+![](img/model-s-screen.jpg)
 
 你要在触摸屏上找到一个叫“Controls”的页面，然后从左边的控制栏选择“Sunroof”，然后在右边会出现一个车子的图片，和一个滚动条。你把滚动条往下拉，天窗就打开了……
 
@@ -32,7 +32,7 @@
 
 相比之下，大部分其它车的硬件天窗控制器，附近没有很多干扰信息：
 
-![](http://www.yinwang.org/images/mercedes-sunroof-control.jpg)
+![](img/mercedes-sunroof-control.jpg)
 
 这个控制器在顶棚上，而且处于控制板的中央位置。旁边只有几个顶灯的开关。这些开关，对应着灯在顶棚上的位置。后面的灯，控制器在后面；前面的灯，控制器在前面；左边的灯，控制器在左边；右边的灯，控制器在右边……
 
@@ -72,11 +72,11 @@
 
 Model S的门把设计也有问题。它的门把是电动的，而其它车的门把，都是机械的。在停止的状态，Model S的门把会自动缩回去，不露一点缝隙：
 
-![](http://www.yinwang.org/images/model-s-door-handle-down.jpg)
+![](img/model-s-door-handle-down.jpg)
 
 当你接近车子的时候，内部的电机会让门把伸出来，这样你就能拉开车门：
 
-![](http://www.yinwang.org/images/model-s-door-handle-up.jpg)
+![](img/model-s-door-handle-up.jpg)
 
 按照Tesla设计师的[思路](http://www.carbodydesign.com/2013/11/tesla-chief-designer-creating-a-car-from-the-ground-up)：“第一次接近这部车的时候，你首先接触到的是门把：这应该是一个印象深刻的经历。在你走近的同时，门把也伸出来——就好像是这车子想起了你……”
 
@@ -107,13 +107,13 @@ Model S的门把设计也有问题。它的门把是电动的，而其它车的�
 
 另外一个奇葩的地方是，触摸屏下方，座位之间，有一片很低的，光溜溜的平面，像个微型的保龄球球道……
 
-![](http://www.yinwang.org/images/model-s-console.jpg)
+![](img/model-s-console.jpg)
 
 这貌似是用来放随身物品的。然而这个空间，由于位置和形状的问题，恐怕不会得到有效的利用。由于平台位置太低，几乎到了地板上，如果往里面放置物品，拿起来会非常的不顺手，甚至需要弯腰下去，而且恐怕会被不小心踢翻。因为整个平面是光滑的，中间也没有挡板，车子加减速时，东西可能会到处乱跑。从美学角度看，这个区域的边界，跟触摸屏线条错位，感觉不流畅，不美观。
 
 另外有用户[反映](https://my.teslamotors.com/it_CH/forum/forums/cup-holders-and-spilled-coffee)，Model S的咖啡杯座，被设置在一个很容易被手肘碰翻的位置。某些Tesla的“专家用户”对此的建议是，去买“防溅”的咖啡杯。有些聪明人甚至自己设计，并且用3D打印机山寨了一个架子来放咖啡：
 
-![](http://www.yinwang.org/images/model-s-3d-printed-cup-holder.png)
+![](img/model-s-3d-printed-cup-holder.png)
 
 我对此举动非常的无语。本来Tesla的设计师应该做好的东西，居然需要自己动手。很不可思议的是，这样不舒服的车，被叫做“豪华车”，价钱是其它牌子的两三倍……
 
@@ -127,7 +127,7 @@ Model S的门把设计也有问题。它的门把是电动的，而其它车的�
 
 2016年1月1号，在挪威的一个Tesla充电站，有一台Model S在充电的时候，莫名其妙起火燃烧（见[新闻](http://www.extremetech.com/extreme/220237-tesla-model-s-catches-fire-at-supercharger-station-in-norway)和[视频](https://www.youtube.com/watch?v=CWXN7ni4FTc)）。由于着火的材料是锂金属，消防队无法用水控制火势，只能用泡沫覆盖隔离，等待烈火把车子完全融化。最后这台车被完全烧毁，幸好没有人员伤亡。事故起因正在调查之中。
 
-![](http://www.yinwang.org/images/model-s-burn.jpg)
+![](img/model-s-burn.jpg)
 
 Elon Musk对此事故的反应比较让人失望，他说：“美国每年有上万辆汽车起火事故，没有人报道。为什么Tesla的车一起火，媒体就争相报道？” 不好好调查和检讨起火的原因，反倒笑别人“一百步”，这种态度是不可取的。
 
@@ -149,7 +149,7 @@ Elon Musk对此事故的反应比较让人失望，他说：“美国每年有�
 
 这貌似一个很新很酷的功能，咋一看跟Google的自动车有的一拼（其实差得天远）。然而在推出后不久，YouTube上出现了一些视频（[视频1](https://www.youtube.com/watch?v=MrwxEX8qOxA)，[视频2](https://www.youtube.com/watch?v=Lx3-epk_ztQ)，[视频3](https://www.youtube.com/watch?v=LJnYCEQwtHs)，[视频4](https://www.youtube.com/watch?v=rkZ-jhLxrVc)，[视频5](https://www.youtube.com/watch?v=mLOG1bw3vSM)）。它们显示，autopilot在某些情况下有可能进行错误的判断和操作，有些险些造成严重的迎面车祸。
 
-[ ![](http://www.yinwang.org/images/model-s-autopilot-frontal.png) ](https://www.youtube.com/watch?v=MrwxEX8qOxA)
+[ ![](img/model-s-autopilot-frontal.png) ](https://www.youtube.com/watch?v=MrwxEX8qOxA)
 
 特别是[视频1](https://www.youtube.com/watch?v=MrwxEX8qOxA)显示，在路面线条清晰，天气很好的路上，autopilot忽然向左转向迎面方向的车道，差点导致严重的对撞车祸。仔细观察autopilot转向之前的情况，是由于路面上有阳光投下来的树影。Autopilot误以为那是一个障碍物，所以把车转上了反方向的车道！
 

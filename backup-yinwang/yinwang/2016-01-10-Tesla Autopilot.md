@@ -8,7 +8,7 @@
 
 这貌似一个很新很酷的功能，咋一看跟Google的自动车有的一拼（其实差得天远）。然而在推出后不久，YouTube上出现了一些视频（[视频1](https://www.youtube.com/watch?v=MrwxEX8qOxA)，[视频2](https://www.youtube.com/watch?v=Lx3-epk_ztQ)，[视频3](https://www.youtube.com/watch?v=LJnYCEQwtHs)，[视频4](https://www.youtube.com/watch?v=rkZ-jhLxrVc)，[视频5](https://www.youtube.com/watch?v=mLOG1bw3vSM)）。它们显示，autopilot在某些情况下有可能进行错误的判断和操作，有些险些造成严重的迎面车祸。
 
-[ ![](http://www.yinwang.org/images/model-s-autopilot-frontal.png) ](https://www.youtube.com/watch?v=MrwxEX8qOxA)
+[ ![](img/model-s-autopilot-frontal.png) ](https://www.youtube.com/watch?v=MrwxEX8qOxA)
 
 特别是[视频1](https://www.youtube.com/watch?v=MrwxEX8qOxA)显示，在路面线条清晰，天气很好的路上，autopilot忽然向左，试图转向反方向的车道，差点导致严重的对撞车祸。仔细观察autopilot转向之前的情况，是由于路面上有阳光投下来的树影。Autopilot误以为那是一个障碍物，所以试图把车转上反方向的车道！
 
