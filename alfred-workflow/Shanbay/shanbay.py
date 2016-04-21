@@ -4,6 +4,7 @@ import sys
 
 from workflow import Workflow
 from workflow import web
+from workflow.notify import notify
 
 TOKEN = 'YY02tKajmTDz86wZO34mkNEIsK4lBL'
 DELIMITER = ' '
@@ -14,6 +15,13 @@ NOTE_URL = BASE_URL + 'note/'
 
 
 def main(wf):
+    """
+    TODO:
+    apply for token
+    definition exceed one line
+    avoid command mode called directly
+    """
+
     # The Workflow instance will be passed to the function
     # you call from `Workflow.run`. Not so useful, as
     # the `wf` object created in `if __name__ ...` below is global.
@@ -22,29 +30,38 @@ def main(wf):
 
     # Get args from Workflow, already in normalized Unicode
     if len(wf.args):
+        logger.info("called " + DELIMITER.join(wf.args) + " length " + str(len(wf.args)))
         q = wf.args[0]
     else:
         q = "test "
 
-    logger.info("called " + q)
-
     # Do stuff here ...
+    mode_q = True
     try:
-        if not q.endswith(' '):
-            wf.add_item(u"Ending with space to execute...")
+        args = q.strip().split(DELIMITER)
+        if len(args) == 1:
+            # query mode
+            if not q.endswith(' '):
+                wf.add_item(u"Ending with space to query...")
+            else:
+                query(args[0])
         else:
-            args = q.strip().split(DELIMITER)
+            # command mode
+            mode_q = False
             cmd = args[0]
             if cmd.lower() == "add" and len(args) == 2:
                 add(args[1])
-            elif cmd.lower() == "query" and len(args) == 2:
-                query(args[1])
+            elif cmd.lower() == "notify" and len(args) == 2:
+                notify(cmd, args[1])
             elif cmd.lower() == "note" and len(args) >= 3:
                 note(args[1], args[2:])
             else:
-                wf.add_item(u"Waiting more parameters...")
+                logger.warn("illegal command: " + str(cmd))
     except RuntimeError as e:
-        wf.add_item(u"ERROR", str(e.message))
+        if mode_q:
+            wf.add_item(u"ERROR", str(e.message))
+        else:
+            notify("ERROR", str(e.message))
 
     # Add an item to Alfred feedback
 
@@ -59,26 +76,25 @@ def query(word):
     en_definitions = data['data']['en_definitions']
     cn_definition = data['data']['definition']
     if cn_definition:
-        wf.add_item(title=cn_definition, arg=unicode(data['data']['id']), valid=True)
+        wf.add_item(title=cn_definition, arg=unicode(data['data']['id']), valid=True,
+                    modifier_subtitles={'cmd': 'add to wordbook', 'shift': 'test notify', 'alt': 'add note'})
     for en_type in en_definitions:
         for en_definition in en_definitions[en_type]:
             wf.add_item(" " + en_type + ". " + en_definition)
 
 
-def add(word):
-    # notify('Added', word)
-    data = {'access_token': TOKEN, 'id': get_word_id(word)}
+def add(word_id):
+    data = {'access_token': TOKEN, 'id': word_id}
     r = web.post(ADD_URL, data=data)
     check_status(r)
-    wf.add_item(word + " added to wordbook")
+    notify("Added to wordbook", word_id)
 
 
 def note(word, notes):
-    # notify('Added', word)
     data = {'access_token': TOKEN, 'vocabulary': get_word_id(word), 'note': DELIMITER.join(notes).strip()}
     r = web.post(NOTE_URL, data=data)
     check_status(r)
-    wf.add_item("Note added for " + word)
+    notify("Note added", word)
 
 
 def get_word_json(word):
