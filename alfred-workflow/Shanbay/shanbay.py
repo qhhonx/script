@@ -6,7 +6,9 @@ from workflow import Workflow
 from workflow import web
 from workflow.notify import notify
 
-TOKEN = 'YY02tKajmTDz86wZO34mkNEIsK4lBL'
+# https://api.shanbay.com/oauth2/authorize/?client_id=8f3f87e86fecb079b2b6&response_type=token
+# apply token by above URL, and copy token from redirected URL
+TOKEN = 'paste your token here '
 DELIMITER = ' '
 BASE_URL = 'https://api.shanbay.com/bdc/'
 QUERY_URL = BASE_URL + 'search/?word='
@@ -20,6 +22,7 @@ def main(wf):
     apply for token
     definition exceed one line
     avoid command mode called directly
+    notes not work
     """
 
     # The Workflow instance will be passed to the function
@@ -53,15 +56,15 @@ def main(wf):
                 add(args[1])
             elif cmd.lower() == "notify" and len(args) == 2:
                 notify(cmd, args[1])
-            elif cmd.lower() == "note" and len(args) >= 3:
-                note(args[1], args[2:])
+            # elif cmd.lower() == "note" and len(args) >= 3:
+            #     note(args[1], args[2:])
             else:
                 logger.warn("illegal command: " + str(cmd))
     except RuntimeError as e:
         if mode_q:
             wf.add_item(u"ERROR", str(e.message))
         else:
-            notify("ERROR", str(e.message))
+            notify("ERROR" + str(e.message))
 
     # Add an item to Alfred feedback
 
